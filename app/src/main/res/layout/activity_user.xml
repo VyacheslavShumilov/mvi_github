@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivity">
+
+    <LinearLayout
+        android:id="@+id/userInfoLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/avatarUserImageView"
+            android:layout_width="@dimen/user_image_width"
+            android:layout_height="@dimen/user_image_height"
+            android:layout_marginStart="@dimen/user_image_margin_start"
+            android:layout_marginTop="@dimen/user_image_margin_top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/user_layout_margin_top"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/avatarUserImageView">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/user_txt_margin_start"
+                android:background="@color/teal_200"
+                android:text="@string/user_txt_login"
+                android:textSize="@dimen/user_txt_size" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/loginUserTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/id_margin_start"
+                android:textSize="@dimen/user_txt_size" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/user_layout_margin_top"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/ll3">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/user_txt_margin_start"
+                android:background="@color/teal_200"
+                android:text="@string/user_txt_id"
+                android:textSize="@dimen/user_txt_size" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/userIdTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/id_margin_start"
+                android:textSize="@dimen/user_txt_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/user_layout_margin_top"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/ll">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/user_txt_margin_start"
+                android:background="@color/teal_200"
+                android:text="@string/user_txt_node_id"
+                android:textSize="@dimen/user_txt_size" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/userNodeIdTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/id_margin_start"
+                android:textSize="@dimen/user_txt_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/user_layout_margin_top"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/ll2">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/user_txt_margin_start"
+                android:background="@color/teal_200"
+                android:text="@string/user_txt_followers_url"
+                android:textSize="@dimen/user_txt_size" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/userFollowersUrlTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/id_margin_start"
+                android:textSize="@dimen/user_txt_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/user_layout_margin_top"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/ll4">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/user_txt_margin_start"
+                android:background="@color/teal_200"
+                android:text="@string/user_txt_type"
+                android:textSize="@dimen/user_txt_size" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/userTypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/id_margin_start"
+                android:textSize="@dimen/user_txt_size" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

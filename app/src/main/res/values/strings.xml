@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MVI</string>
+    <string name="id_text">ID:</string>
+    <string name="login">Login:</string>
+    <string name="button_txt">Button</string>
+    <string name="user_txt_login">Login:</string>
+    <string name="user_txt_id">ID:</string>
+    <string name="user_txt_node_id">Node ID:</string>
+    <string name="user_txt_followers_url">Followers url:</string>
+    <string name="user_txt_type">Type:</string>
+</resources>
